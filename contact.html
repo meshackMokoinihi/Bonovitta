@@ -50,25 +50,52 @@
     </nav>
 
 
+    <!-- <div class="image-container">
+      <img src="static/images/contact.jpg" class="img-fluid" style="height: 45rem;" alt="Book Image">
+      
+  </div>
+</div> -->
+
+
     
-    
-  
-  <div class="container bg-dark mt-5 text-light rounded" style="width: 80%;">
-    
-    <form id="quoteForm">
-      <h2 class="text-center">Contact Us</h2>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com" required>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary  justify-content-center">Send</button>
-    </form>
+<div class="image-container">
+  <img src="static/images/contact.jpg" class="img-fluid" alt="Book Image" style="height: auto; max-height: 45rem; width: 100%;">
 </div>
 
+  
+    <div class="container bg-secondary mt-5 text-light rounded p-4" style="max-width: 600px;">
+      <form id="quoteForm">
+        <h2 class="text-center mb-4" style="color: #f8f9fa;">Contact Us</h2>
+    
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+        </div>
+    
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+        </div>
+    
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="+27 64 999 000" required>
+        </div>
+    
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Inquiry about services" required>
+        </div>
+    
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
+    
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+      </form>
+    </div>
+    
 
     
 <footer class="border border-info rounded mt-5 pt-5">
