@@ -1,12 +1,29 @@
-emailjs.init("f1EemNd8cLi9KnZGe"); // Replace with your EmailJS public key
+(function(){
+    emailjs.init("32l6lbCsWRppGrJ-E");
+ })();
+    
+    
+  
+  
 
-document.getElementById('quoteForm').addEventListener('submit', function(event) {
+  // Handling form submission
+  document.getElementById('notifyForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_75m4j0d', 'template_odd9d4f', this)
-        .then(function(response) {
-            alert('Email sent successfully!');
-        }, function(error) {
-            alert('Failed to send email. Please try again.');
-        });
-});
+    // Get the email value from the input
+    let templateParams = {
+      user_email: document.getElementById('user_email').value
+    };
+
+    // Send the form data using sendForm method
+    emailjs.send("service_p71pnur", "template_hmopzu6", templateParams)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      document.getElementById('responseMessage').style.display = "block";
+    }, function(error) {
+      console.log('FAILED...', error);
+    });
+
+    // Clear the input field
+    this.reset();
+  });
